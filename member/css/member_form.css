@@ -1,0 +1,78 @@
+
+body {
+      font-family: 'Noto Sans KR', 'Roboto', "돋움", Dotum, "굴림", Gulim, sans-serif;
+      font-size: 16px;
+      color: #333;
+      letter-spacing: -1px;
+      background: #eee;
+    }
+    #content{
+      position: relative;
+}
+.logo{margin: 10px auto 0; display: block; width: 113px; height: 49px;}
+#content{width: 600px; margin: 30px auto;
+       padding: 70px; font-family: 'Nanum Gothic', sans-serif; background: #fff; border-radius: 20px;}  
+#content h2{font-size: 30px; margin-left: 10px; margin-top: 80px;}
+#content h2 span{display: block; font-weight: 500; font-size: 20px;}
+#content h2::before {
+      content: '';
+      position: absolute;
+      top: 204px;
+      left: 70px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: #3f2672;
+}
+input{width: 100%; line-height: 57px; font-size: 1.125rem; padding: 0 0 0 10px; box-sizing: border-box; 
+      border:1px  solid #ddd; outline: 0; margin: 10px 0;}
+#content .member{box-shadow: #999}
+  
+header img{padding-left: 50%;}
+#content table caption{text-align: justify; margin: 50px 0; font-size: 30px;}
+table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+    address {
+      font-style: normal
+    }
+td{padding: 10px}
+th{ display: block; text-align: justify;padding: 10px 0;}
+td{width: 100%; display: block;}
+#hp1,#hp2,#hp3{width: 31%; height: 60px; line-height: 57px; font-size: 1.125rem; box-sizing: border-box; 
+      border:1px  solid #ddd; outline: 0;}
+
+#email1, #email2{width: 46%; height: 60px; line-height: 57px; font-size: 1.125rem; box-sizing: border-box; 
+      border:1px  solid #ddd; outline: 0;}
+table tr:last-child td{text-align: center; padding: 20px 0}
+
+#id,#pass,#pass_confirm,#name,#nick{width: 100%;}
+
+
+.button {
+      text-align: center;
+      margin-top: 100px;
+}
+
+.button a {
+      display: inline-block;
+      width: 200px;
+      line-height: 24px;
+      padding: 16px 0;
+      border: none;
+      background: #3f2672;
+      font-size: 20px;
+      cursor: pointer;
+      color: white;
+      margin: 0 5px;
+      text-align: center;
+}
+
+#button a:last-of-type {
+      background-color: #999;
+}
+.load {position: relative;}
+#loadtext{position: absolute; top: 40px; right:20px; color: green;}
+.load2 {position: relative;}
+#loadtext2{position: absolute; top: 40px; right:20px; color: green;}

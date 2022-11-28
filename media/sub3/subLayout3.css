@@ -1,0 +1,315 @@
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;  
+}
+
+.heading-primary {
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+   /*  Animation decalaration   */
+    animation-name: moveInleft;
+    animation-duration: 3s;
+}
+
+.heading-primary-sub {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 20.9px;
+  
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+
+#imgBG{
+   position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:block
+}
+
+
+@keyframes scrolldown_wheel {
+   from{transform:translateY(0); opacity:1;}
+   to{transform: translateY(25px); opacity:0;}
+}
+.down::before{content:''; position:absolute; left: 50%; top: 10px; margin-left:-3px; display:block; width:6px; height: 6px; border-radius:500px; background:#fff; animation:scrolldown_wheel 1s infinite;}
+.down::after{content:''; position:absolute; left: 0; bottom: -24px; display:block; width: 100%; height: 12px; background:url("../images/scrolldown.png") 50% 0 no-repeat; background-size:18px auto; animation:scrolldown_wheel 1s infinite;}
+
+
+
+.down{
+   position: absolute;
+   left: 50%;
+   bottom: 60px;
+   transform: translateX(-50%);
+   display: block;
+   width: 40px;
+   height: 60px;
+   border: 2px solid #fff;
+   border-radius: 500px;
+   box-sizing: border-box;
+   text-indent: -9999%;
+   font-size: 0;
+   z-index: 2;}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+	100% { transform:scale(1.2); opacity:0.8; color:#888;}
+}	
+
+
+#content{
+  background: rgba(13 13 13 / .9);
+  margin: 900px 0 0 0;
+}
+
+#content img{
+  width: 100%;
+}
+
+#content > div:not(.pd-0){
+  padding: 100px 0;
+}
+
+#content div .center_container{
+  width:90%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+#content div .center_container h3{
+  font-size: 3em;
+  font-family: 'Russo One';
+  text-align: center;
+
+ opacity: 1; padding-bottom: 20px;
+ 
+ 
+  background:linear-gradient(to right, #5dafe3, #527cbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#content div .center_container h3::before{
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #527cbb;
+}
+
+  /* =============== .trailers =============== */
+#content .league .center_container h3::before{
+  content: 'League';
+}
+
+.league ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.league ul li{width: 120%;
+  position: relative;}
+
+
+.league ul li a{
+  display: block;
+  overflow: hidden;
+}
+
+.league ul li a img{
+  transition: .3s;
+}
+
+.league ul li a:hover img{
+  transform: scale(1.05);
+}
+
+.league ul li p{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: .5rem;
+
+  display: none;
+}
+
+.league ul li dl{
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.league ul li dl dt{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.league .playBnt{
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  width: 110px;
+  height: 110px;
+  margin: -55px 0 0 -55px;
+  border-radius: 94px;
+
+}
+.league ul li a:hover .playBnt{
+  display: none;
+  transition: all ease-out .9s;
+} 
+
+/* =============== .cast =============== */
+#content .ucl .center_container h3::before{
+  content: "UCL";
+}
+
+.ucl ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ucl ul li{
+  width: 23%;
+  color: #fff;
+  text-overflow: ellipsis;
+  position: relative;
+  
+}
+
+.ucl ul li a{
+  display: block;
+  overflow: hidden;
+}
+
+.ucl ul li a img{
+  transition: .3s;
+}
+
+.ucl ul li a:hover img{
+  transform: scale(1.05);
+}
+.ucl ul li a:hover .playBnt{
+  display: none;
+  transition: all ease-out .9s;
+} 
+
+.ucl ul li p{
+  font-size: 1.15rem;
+  margin: .5rem 0;
+  text-align: center;
+}
+.ucl .playBnt{
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  width: 110px;
+  height: 110px;
+  margin: -55px 0 0 -55px;
+  border-radius: 94px;
+  
+}
+
+/* =============== Media Query =============== */
+/* === Desktop === */
+@media screen and (max-width:1280px) {}
+
+
+/* === Tablet === */
+@media screen and (max-width:1024px) {
+   .ucl ul li{
+      width: 48%;
+      margin-bottom: 2rem;
+   }
+}
+
+
+/* === Tablet_small === */
+@media screen and (max-width:768px) {
+   .league ul{
+      flex-direction: column;
+   }
+}
+
+
+/* === Mobile === */
+@media screen and (max-width:640px) {
+  .heading-primary-main{font-size: 2.034rem;}
+  .league .playBnt img{margin:-40px 0;}
+  .league ul li{width: 100%;} 
+  .ucl ul li{
+      width: 100%;
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

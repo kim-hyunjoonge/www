@@ -1,0 +1,24 @@
+#content .contentArea .slogun{ text-align: center; font-size: 1.5em; line-height: 2em;margin: 50px 0 50px 0;}
+#content .contentArea .slogun p:nth-child(1){font-size: 30px; font-weight: bold; margin-top: 20px;}
+#content .contentArea .slogun p:nth-child(2){text-align: center; line-height: 2em; margin-top: 15px;}
+
+#content .contentArea .rightPeople{margin:100px 0 100px 200px;}
+#content .contentArea .rightPeople ul{overflow: hidden;}
+#content .contentArea .rightPeople ul li{float: left; width: 400px; margin-left: 50px; box-sizing:border-box;}
+
+#content .contentArea .rightPeople ul li:nth-child(3){margin-left: 0px;}
+
+#content .contentArea .rightPeople ul li:first-child{margin-left: 0;}
+#content .contentArea .rightPeople ul li::before{content: ''; display: block; font-size: 2em; font-weight: bold; color: #4d1f7a;}
+#content .contentArea .rightPeople ul li:nth-child(1)::before{content:'01';}
+#content .contentArea .rightPeople ul li:nth-child(2)::before{content:'02';}
+#content .contentArea .rightPeople ul li:nth-child(3)::before{content:'03'; margin-top: 100px;}
+#content .contentArea .rightPeople ul li:nth-child(4)::before{content:'04'; margin-top: 100px;}
+
+#content .contentArea .rightPeople ul li .image{margin: 50px 0 0; overflow: hidden;}
+#content .contentArea .rightPeople ul li .image img{transition: .3s; width: 310px; height: 200px; display: block;}
+#content .contentArea .rightPeople ul li:hover .image img{transform: scale(1.1);} 
+
+
+#content .contentArea .rightPeople ul li h3{font-size: 1.5em; font-weight: normal; margin:10px 0 0;}
+#content .contentArea .rightPeople ul li p{font-size: 1.2em; margin: 20px 0 0;  text-align: justify;}

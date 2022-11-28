@@ -1,0 +1,219 @@
+<?
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회사소개-인사말</title>
+<link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+<link rel="apple-touch-startup-image" href="../startup.png">
+<link rel="shortcut icon" href="../pavicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="./css/sub1_content2.css">
+
+<script src="https://kit.fontawesome.com/0e5abf2d10.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+    
+    
+     <div id="wrap">
+       <header id="headerArea">
+           <div class="headerTop">
+           <h1>
+               <a href="../index.html">KG케미칼 로고</a>
+           </h1>
+       </div>
+           <a class="menuOpen" href="#">
+               <span>
+               메뉴
+               </span>
+           </a>
+           <div class="modalBox"></div>
+           <nav id="gnb">
+              <h2 class="hidden">글로벌네비게이션영역</h2>
+               <h3>
+                   <a href="#">
+                       KG케미칼 로고
+                   </a>
+               </h3>
+               <?
+
+               @extract($_POST);
+               @extract($_GET);
+               @extract($_SESSION);
+               // $userid = $_SESSION['userid'];
+               
+               
+               if(!$userid)
+                   {
+               ?>
+                           <ul class="login">
+                               <li>
+                                   <h3>
+                                       <a href="../member/join.html">회원가입</a>
+                                   </h3>
+                               </li>
+                               <li>
+                                   <h3>
+                                       <a href="../login/login_form.php">로그인</a>
+                                   </h3>
+                               </li>
+                           </ul>
+                           <?
+                   }
+                   else
+                   {
+               ?>
+               <ul class="login">
+                <li>
+                    <h3>
+                        <a href="../member/member_form_modify.php">회원정보수정</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="../login/logout.php">로그아웃</a>
+                    </h3>
+                </li>
+               </ul>
+               <?
+                   }
+               ?>
+               <ul class="mainMenu">
+                   <li class="depth1">
+                       <h3><a href="#">기업소개
+                           <i></i>
+                           <span class="hidden">더보기</span>
+                          </a></h3>
+                       <ul>
+                           <li><a href="./sub1_1.html">KG케미칼소개</a></li>
+                           <li><a href="./sub1_2.html">인사말</a></li>
+                           <li><a href="./sub1_3.html">연혁</a></li>
+                       </ul>
+                   </li>
+                   <li class="depth1">
+                      <h3><a href="#">사업분야
+                       <i></i>
+                       <span class="hidden">더보기</span>
+                      </a></h3>
+                      <ul>
+                       <li><a href="../sub2/sub2_1.html">사업부문</a></li>
+                       <li><a href="../sub2/sub2_2.html">R&D</a></li>
+                      </ul>
+                     
+                   </li>
+                   <li class="depth1">
+                       <h3><a href="#">제품정보
+                           <i></i>
+                           <span class="hidden">더보기</span>
+                          </a></h3>
+                       <ul>
+                           <li><a href="../sub3/sub3_1.html">비료제품</a></li>
+                           <li><a href="../sub3/sub3_2.html">소재사업</a></li>
+                           <li><a href="../sub3/sub3_3.html">차량요소수사업</a></li>
+                       </ul>
+                   </li>
+                   <li class="depth1">
+                       <h3><a href="#">고객지원
+                           <i></i>
+                           <span class="hidden">더보기</span>
+                          </a></h3>
+                       <ul>
+                           <li><a href="../sub4/sub4_1.html">FAQ</a></li>
+                           <li><a href="../sub4/sub4_2.html">미디어센터</a></li>
+                           <li><a href="../sub4/sub4_3.html">채용안내</a></li>
+                       </ul>
+                   </li>
+               </ul>
+            </nav>
+       </header>
+
+       <div class="main">
+        <div class="subLayout">
+        <h3>회사소개</h3>
+    </div>
+    <div class="subNav aboutkgMenu">
+        <ul>
+            <li><a href="./sub1_1.html">KG케미칼</a></li>
+            <li><a class="current" href="./sub1_2.html">인사말</a></li>
+            <li><a href="./sub1_3.html">연혁</a></li>
+        </ul>
+    </div>
+</div>
+<article id="content">
+    <div class="titleArea">
+        <h2>ceo인사말</h2>
+    </div>
+    <div class="contentArea">
+        <div class="subGreeting">
+            <div class="ceoImg">
+                <img src="./images/subimg2_1x2.png" alt="">
+            </div>
+        <p class="summary">세계 최고를 지향하며<br> 글로벌 시대를 맞아 새로운 도약을 시작하려고 합니다.</p>
+        <div class="text">
+            <h3 class="hidden">ceo인사말</h3>
+            <p> 국내 최초의 비료회사로서 지난 반세기 동안 국가기간산업의 한 축인 비료산업에서 선도적인 역할을 담당하며 수많은 시련과 역경을 극복하고 성장을 거듭해 온 KG케미칼(구.경기화학)은 세계 최고를 지향하며 21세기의 글로벌 시대를 맞아 새로운 도약을 시작하려고 합니다.</p>
+            <p>KG케미칼은 이러한 시대적 변화의 중심에 서서 변화를 선도하겠습니다. 신기술과 신지식을 끊임없이 추구하고 모든 기업 활동의 초점을 고객감동과 기업성장에 맞추어 24시간 쉬지 않고 노력할 것이며 기업 최고의 무기인 우수한 인재와 앞선 기술로 새로운 초일류 글로벌 친환경 기업으로서의 미래를 열어가겠습니다.</p>
+            <p>경영에 있어서는 원칙경영, 투명경영, 윤리경영을 통하여 고객과 국민으로부터는 신뢰받고 사랑받는 기업으로, 투자자들에게는 매력있는 기업으로 성장해 나갈 것입니다. 그리하여 궁극적으로는 고객의 행복을 구현하고 사회적 책무를 다하는 존재로서의 '존경받는 기업' 이라는 목표를 실현해 나갈 것입니다</p>
+            <p>KG케미칼 전임직원이 혼연일체가 되어 지속적인 혁신경영, 새로운 정보와 지식의 부단한 축적과 원활한 커뮤니케이션 그리고 그를 통한 업무의 혁신, 사고의 혁신, 그리고 시스템의 혁신이라고하는 3대 혁신과제의 달성을 통해서 새로운 도약의 반세기를 열어나가겠습니다.</p>
+        <span class="sign">
+            KG그룹 회장
+            <img src="./images/subimg2_2.png" alt="CEO sign">
+        </span>
+        </div>
+        </div>
+    </div>
+</article>
+<footer id="footerArea">
+    <div class="footerInner">
+        <div class="topMove">
+         <a href="#">top</a>
+        </div>
+     <div class="footerLogo">KG케미칼 로고</div>
+     <ul class="footerSns">
+        <li><a href="https://www.youtube.com/channel/UCkdh0yGjpqFpl0IBcR2zYfA">유튜브</a></li>
+        <li><a href="#">블로그</a></li>
+        <li><a href="#">페이스북</a></li>
+     </ul>
+     <ul class="footerLink">
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">원격지원</a></li>
+    </ul>
+    <div class="info">
+        <address>
+            KG케미칼 주식회사<br>
+            (44996)울산광역시 울주군 온산읍 당월로 322<br>
+            대표전화:052-231-1700<br>
+        </address>
+        <p>COPYRIGHT (C) BY KG GROUP.ALL RIGHT RESERVED</p>
+    </div>
+    <div class="family">
+        <a href="#" class="arrow">family Site
+        <span class="hidden">sort-down</span>
+        </a>
+        <ul class="familyList">
+            <li><a href="http://www.kggroup.co.kr/" title="KG그룹 새창에 열림" target="_blank">KG그룹</a></li>
+            <li><a href="https://www.inicis.com/" title="KG이니시스 새창에 열림" target="_blank">KG이니시스</a></li>
+            <li><a href="https://www.hollys.co.kr/" title="할리스커피 새창에 열림" target="_blank">할리스커피</a></li>
+        </ul>
+    </div>
+    </div>
+</footer>
+</div>
+
+
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/jquery-migrate-1.4.1.min.js"></script>
+<script src="../js/move.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

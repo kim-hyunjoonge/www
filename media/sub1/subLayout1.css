@@ -1,0 +1,313 @@
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;  
+}
+
+.heading-primary {
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 35px;
+   /*  Animation decalaration   */
+    animation-name: moveInleft;
+    animation-duration: 3s;
+}
+
+.heading-primary-sub {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 20.9px;
+  
+    animation-name: moveInRight;
+    animation-duration: 3s;
+}
+
+@keyframes moveInleft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+.videoBox{width:100%;height:100%; overflow:hidden; position:absolute}
+
+
+#imgBG{
+   position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:block
+}
+
+
+
+@keyframes scrolldown_wheel {
+   from{transform:translateY(0); opacity:1;}
+   to{transform: translateY(25px); opacity:0;}
+}
+.down::before{content:''; position:absolute; left: 50%; top: 10px; margin-left:-3px; display:block; width:6px; height: 6px; border-radius:500px; background:#fff; animation:scrolldown_wheel 1s infinite;}
+.down::after{content:''; position:absolute; left: 0; bottom: -24px; display:block; width: 100%; height: 12px; background:url("../images/scrolldown.png") 50% 0 no-repeat; background-size:18px auto; animation:scrolldown_wheel 1s infinite;}
+
+
+
+.down{
+   position: absolute;
+   left: 50%;
+   bottom: 60px;
+   transform: translateX(-50%);
+   display: block;
+   width: 40px;
+   height: 60px;
+   border: 2px solid #fff;
+   border-radius: 500px;
+   box-sizing: border-box;
+   text-indent: -9999%;
+   font-size: 0;
+   z-index: 2;}
+@keyframes ani {
+	0% { transform:scale(1); opacity:1; color:#fff;}
+	100% { transform:scale(1.2); opacity:0.8; color:#888;}
+}	
+
+
+body{
+    background:transparent;
+  }
+  /* customizable snowflake styling */
+  .snowflake {
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial;
+    text-shadow: 0 0 1px #000;
+  }
+
+
+  .theClub .slogun h3.active{animation:about_itemdown 1 1s ease-out; animation-fill-mode: forwards;}
+  .theClub .slogun div.active{animation:about_itemdown 1 1s ease-out; animation-fill-mode: forwards;}
+  @keyframes xray {
+    0%{}
+    50%{filter:invert(1);}
+    100%{filter:invert(0);}
+}
+
+@keyframes about_itemdown{
+    from{opacity: 0; transform:translateY(-50px);}
+    to{opacity: 1; transform:translateY(0);}
+}
+
+#content{margin: 900px 0 0 0;}
+#content .slogun {
+  margin-top: 50px;
+  color: #fff;
+}
+#content h3 {
+  text-align: center;
+  color: #527cbb;
+  font-size: 4.5vw;
+  font-weight: 900;
+  transition: all ease-in-out .6s;
+}
+
+#content h3:hover{
+  color: #fff;
+}
+
+
+
+
+.theClub h3{
+    display:inline-block; /*font-size:2.7777rem;*/ font-size:1.944rem; letter-spacing:0.045rem;
+ 
+    background:linear-gradient(to right, #5dafe3, #527cbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.theClub .slogun{text-align:center; padding: 5rem 6.25%;}
+.theClub .slogun h3{font-size:2.7777rem; opacity: 1; padding-bottom: 20px;}
+.theClub .slogun div{color:rgba(163,166,255,.5); margin:1.38888rem 0 0; opacity: 0;}
+.theClub .slogun div p + p{margin:1.25rem 0 0;}
+
+
+#content .slogun>ul {
+  width: 90%;
+  margin: 80px auto 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#content .slogun li {
+  width: 30%;
+}
+
+#content .slogun li:hover p::before {
+  width: 60%;
+}
+.theClub .slogun p + p{margin:1.25rem 0 0;}
+
+#content .slogun img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+#content .slogun ul p {
+  font-weight: 300;
+  font-size: 16px;
+}
+#content .slogun ul li img{width: 100%; height: 300px; border-radius: 20% 0 20%;}
+#content .slogun ul li p{margin-top: 15px;}
+
+
+#content .theClub2{height: auto; background: url("../images/marado.jpg")no-repeat fixed center; background-size: cover; padding: 100px 64px; margin-top: 120px;
+  display: flex; gap: 4rem; align-items: center; color: #fff;}
+#content .theClub2 p:first-child{width: 60%; 
+  font-weight: 800;
+  font-size: 2.222rem;
+  background:linear-gradient(to right, #5dafe1, #527cbb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+#content .theClub2 .phrase{width: 40%; margin-top: 0; color: #fff; font-size: 16px;}
+
+
+
+
+#content .theMission h3{text-align: center; margin-top: 100px;}
+.theMission ul{display: grid; grid-template-rows: 1fr 1fr; gap: 1.5rem; margin: 64px 64px 120px 64px;}
+.theMission ul li{position: relative; overflow: hidden; z-index: 0; transition: all .5s; outline: 4px solid rgba(0, 0, 0, .0); border-radius: 4px;}
+.theMission ul li:hover{outline: 4px solid #5dafe3;}
+.theMission ul li::before{content: ''; display: block; width: 50%; height: 100%; background: rgba(0, 0, 0, .5); position: absolute; right: 0; z-index: -10;}
+.theMission ul li:first-child{grid-column: 1/spen 2; background-image: url("../images/soccer-players-action-professional-stadium.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover;}
+.theMission ul li:nth-child(2){background-image: url("../images/napolisubimg3.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover;}
+.theMission ul li:nth-child(3){background-image: url("../images/napolisubimg4.jpg"); background-repeat: no-repeat; background-position: center; background-size: cover;}
+.theMission ul li dl{width: 50%; float: right;}   
+.theMission ul li dt{color: #fff; font-weight: 600; font-size: 1.333rem; margin: 56px 32px 32px 32px; position: relative; line-height: 1.5em;}
+.theMission ul li dt::before{content: ''; display: block; width: 20px; height: 2px; background: #5dafe3; border-radius: 4px; position: absolute; bottom: -16px;}
+.theMission ul li dd{margin: 0 32px 32px 32px; color: #f7f7f7; font-weight: 300;}
+
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+
+
+
+  .theMission  ul li::before{width: 100%;}
+  .theMission  ul li dl{width: 100%; float: none;}
+}
+
+/* 태블릿 */
+@media screen and (max-width:1024px) {
+  #content .slogun li:first-of-type {
+    display: none;
+ }
+
+ #content .slogun li {
+  width: 40%;
+}
+#content .theClub2 p:first-child{width: 100%; text-align: center; display: block; width: 100%;}
+#content .theClub2 p:last-child{display: none;}
+
+   .theMission ul{margin: 64px 40px 120px 40px;}
+}
+/* 소형 태블릿 */
+@media screen and (max-width:768px) {
+  #content .slogun p {
+    font-size: 16px;
+ }
+
+
+ #content div h3 {
+    font-size: 40px;
+ }
+
+	
+}
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  .videoBox>h2{font-size: 4.5rem;}
+  .videoBox>h2::before{width: 254px; height: 17px; margin: 80px 0 0 -127px;}
+
+  #content .slogun>ul {
+    flex-wrap: wrap;
+ }
+
+
+
+ #content .slogun li {width: 80%; margin-top: 20px;}
+
+#content .slogun img { width: 90%;margin: 0 auto;}
+
+
+#content .theClub2{padding: 0 0; margin: 0 0;}
+#content .theClub2 p:first-child{font-size: 30px; font-weight: 600; width: 100%; text-align: center; display: block; width: 100%;}
+
+#content .slogun p {font-size: 14px;}
+  .theMission ul{margin: 32px 20px 50px 20px; grid-template-rows: repeat(1, 1fr)}
+  .theMission ul li:first-child{grid-column: 1/spen 1;}
+  .theMission ul li dl{text-align: center;}
+  .theMission ul li dt{margin-top: 32px;}
+  .theMission ul li dt::before{left: 50%; margin-left: -10px;}
+  .theMission ul li dd{margin: 0 24px 32px 24px;}
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+  

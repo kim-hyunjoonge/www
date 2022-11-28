@@ -1,0 +1,270 @@
+<?
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제품정보-비료제품</title>
+    <link rel="apple-touch-icon-precomposed" href="../app_icon.png">
+    <link rel="apple-touch-startup-image" href="../startup.png">
+    <link rel="shortcut icon" href="../pavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="./css/sub3_content1.css">
+    
+<script src="https://kit.fontawesome.com/0e5abf2d10.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="skipNav">
+        <a href="#content">본문바로가기</a>
+        <a href="#gnb">네비게이션바로가기</a>
+    </div>
+    
+    
+     <div id="wrap">
+       <header id="headerArea">
+           <div class="headerTop">
+           <h1>
+               <a href="../index.html">KG케미칼 로고</a>
+           </h1>
+       </div>
+           <a class="menuOpen" href="#">
+               <span>
+               메뉴
+               </span>
+           </a>
+           <div class="modalBox"></div>
+           <nav id="gnb">
+              <h2 class="hidden">글로벌네비게이션영역</h2>
+               <h3>
+                   <a href="#">
+                       KG케미칼 로고
+                   </a>
+               </h3>
+               <?
+
+               @extract($_POST);
+               @extract($_GET);
+               @extract($_SESSION);
+               // $userid = $_SESSION['userid'];
+               
+               
+               if(!$userid)
+                   {
+               ?>
+                           <ul class="login">
+                               <li>
+                                   <h3>
+                                       <a href="../member/join.html">회원가입</a>
+                                   </h3>
+                               </li>
+                               <li>
+                                   <h3>
+                                       <a href="../login/login_form.php">로그인</a>
+                                   </h3>
+                               </li>
+                           </ul>
+                           <?
+                   }
+                   else
+                   {
+               ?>
+               <ul class="login">
+                <li>
+                    <h3>
+                        <a href="../member/member_form_modify.php">회원정보수정</a>
+                    </h3>
+                </li>
+                <li>
+                    <h3>
+                        <a href="../login/logout.php">로그아웃</a>
+                    </h3>
+                </li>
+               </ul>
+               <?
+                   }
+               ?>
+               <ul class="mainMenu">
+                   <li class="depth1">
+                       <h3><a href="#">기업소개
+                           <i></i>
+                           <span class="hidden">더보기</span>
+                          </a></h3>
+                       <ul>
+                           <li><a href="../sub1/sub1_1.html">KG케미칼소개</a></li>
+                           <li><a href="../sub1/sub1_2.html">인사말</a></li>
+                           <li><a href="../sub1/sub1_3.html">연혁</a></li>
+                       </ul>
+                   </li>
+                   <li class="depth1">
+                      <h3><a href="#">사업분야
+                       <i></i>
+                       <span class="hidden">더보기</span>
+                      </a></h3>
+                      <ul>
+                       <li><a href="../sub2/sub2_1.html">사업부문</a></li>
+                       <li><a href="../sub2/sub2_2.html">R&D</a></li>
+                      </ul>
+                     
+                   </li>
+                   <li class="depth1">
+                       <h3><a href="#">제품 정보
+                           <i></i>
+                           <span class="hidden">더보기</span>
+                          </a></h3>
+                       <ul>
+                           <li><a href="./sub3_1.html">비료제품</a></li>
+                           <li><a href="./sub3_2.html">소재사업</a></li>
+                           <li><a href="./sub3_3.html">차량요소수사업</a></li>
+                       </ul>
+                   </li>
+                   <li class="depth1">
+                       <h3><a href="#">고객지원
+                           <i></i>
+                           <span class="hidden">더보기</span>
+                          </a></h3>
+                       <ul>
+                           <li><a href="../sub4/sub4_1.html">FAQ</a></li>
+                           <li><a href="../sub4/sub4_2.html">미디어센터</a></li>
+                           <li><a href="../sub4/sub4_3.html">채용안내</a></li>
+                       </ul>
+                   </li>
+               </ul>
+            </nav>
+       </header>
+
+       <div class="main">
+        <div class="subLayout">
+        <h3>제품 정보</h3>
+    </div>
+    <div class="subNav aboutkgMenu">
+        <ul>
+            <li><a class="current"  href="./sub3_1.html">비료제품</a></li>
+            <li><a href="./sub3_2.html">소재사업</a></li>
+            <li><a href="./sub3_3.html">차량요소수사업</a></li>
+        </ul>
+    </div>
+    </div>
+<article id="content">
+    <div class="titleArea">
+        <h2>비료 제품</h2>
+    </div>
+    <div class="contentArea">
+        <div class="product">
+            <ul class="popMenu">
+                <li class="active">
+                    <div class="image"></div>
+                    <div class="intro">
+                        <h3>미생물 비료</h3>
+                        <div class="info">
+                            <p>비료생산 60년 기술력을 바탕으로 신제품 개발 , 품질행상을 위한 투자를 아끼지 않으며  
+                                고객의 목소리에 귀기울이는 기업이 되겠습니다.
+                            </p>
+                            <div class="package">
+                                <a href="#"><span>미생물 논비료</span></a>
+                                <a href="#"><span>미생물 밭비료</span></a>
+                                <a href="#"><span>미생물 완효성</span></a>
+                                <a href="#"><span>미생물 고추비료</span></a>
+                                <a href="#"><span>미생물 고형비료</span></a>
+                                <a href="#"><span>엔케이도 BS</span></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </li>
+                <li class="active">
+                    <div class="image"></div>
+                    <div class="intro">
+                        <h3>복합 비료</h3>
+                        <div class="info">
+                            <p>KG케미칼의 비료사업부문은 농업인에게 고품질의 비료를 합리적인 가격으로 공급하고 있습니다.</p>
+                        <div class="device">
+                            <a href="#"><span>엔케이도</span></a>
+                            <a href="#"><span>엔케이도골드</span></a>
+                            <a href="#"><span>원예추비특호</span></a>
+                            <a href="#"><span>미생물고추비료</span></a>
+                            <a href="#"><span>콩비료</span></a>
+                            <a href="#"><span>유형감자비료</span></a>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="active">
+                    <div class="image"></div>
+                    <div class="intro">
+                    <h3>친환경</h3>
+                    <div class="info">
+                        <p>토양과 작물에 알맞은 무기질 · 유기질비료, 친환경생물제재를 생산하여 건강한 농산물의 수확과 지속
+                            가능한 농업발전에 앞장서고 있습니다.</p>
+                            <div class="device">
+                                <a href="#"><span>씨알루트킹[2L]</span></a>
+                                <a href="#"><span>물타 k[10kg]</span></a>
+                                <a href="#"><span>흙산미네랄</span></a>
+                                <a href="#"><span>유토솔루브</span></a>
+                                <a href="#"><span>라이브충다이</span></a>
+                                <a href="#"><span>서리실드[1L]</span></a>
+                            </div>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+           
+            <div class="modalBox"></div>
+        
+            <div class="popup">
+                <img src="./images/content1/product1.jpg" alt="">
+                
+                <div class="txt">
+                  
+                </div>
+        
+                <a href="#" class="close_btn">닫기</a>
+            </div>
+                </div>
+                </div>
+</article>
+<footer id="footerArea">
+    <div class="footerInner">
+        <div class="topMove">
+         <a href="#">top</a>
+        </div>
+     <div class="footerLogo">KG케미칼 로고</div>
+     <ul class="footerSns">
+        <li><a href="https://www.youtube.com/channel/UCkdh0yGjpqFpl0IBcR2zYfA">유튜브</a></li>
+        <li><a href="#">블로그</a></li>
+        <li><a href="#">페이스북</a></li>
+     </ul>
+     <ul class="footerLink">
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">원격지원</a></li>
+    </ul>
+    <div class="info">
+        <address>
+            KG케미칼 주식회사<br>
+            (44996)울산광역시 울주군 온산읍 당월로 322<br>
+            대표전화:052-231-1700<br>
+        </address>
+        <p>COPYRIGHT (C) BY KG GROUP.ALL RIGHT RESERVED</p>
+    </div>
+    <div class="family">
+        <a href="#" class="arrow">family Site
+        <span class="hidden">sort-down</span>
+        </a>
+        <ul class="familyList">
+            <li><a href="http://www.kggroup.co.kr/" title="KG그룹 새창에 열림" target="_blank">KG그룹</a></li>
+            <li><a href="https://www.inicis.com/" title="KG이니시스 새창에 열림" target="_blank">KG이니시스</a></li>
+            <li><a href="https://www.hollys.co.kr/" title="할리스커피 새창에 열림" target="_blank">할리스커피</a></li>
+        </ul>
+    </div>
+    </div>
+</footer>
+</div>
+<script src="../js/jquery-1.12.4.min.js"></script>
+<script src="../js/jquery-migrate-1.4.1.min.js"></script>
+<script src="../sub3/js/popup.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

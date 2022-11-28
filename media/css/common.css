@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&family=Sacramento&display=swap');
+
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;  }
+html{font-size: 16px; background-color: #111;}
+body {font-family:'Russo One'; font-size:16px; color:#333; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video {border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+.hidden, #skipNav{display: block; position: absolute; left:-1000%; top:0; width: 1px; height: 1px;
+    overflow: hidden; color: #fff;}
+
+/*와이드 pc 1280px~*/
+
+/* 헤더 공통 영역 */
+#wrap{width:100%; overflow: hidden;}
+#headerArea{position:fixed; z-index: 30; height: 80px; background: rgba(0,0,0,0); left:0; top: 0; width: 100%}	
+#headerArea	.headerInner{width: 90%; margin: 0 5%; overflow: hidden}
+#headerArea h1{ float: left; }
+#headerArea h1 a{width: 90px; height: 90px; display: block; text-indent: -999px; background:url(../images/logo1.png)0 50% no-repeat; background-size:100% auto;transition: all .2s ease-in-out;}
+#headerArea #gnb{float:right; font-family: 'Russo One', serif; font-size: 1.3888888rem; color:#fff; letter-spacing:0.045rem; z-index:20;}
+#headerArea #gnb ul{overflow: hidden;}
+#headerArea #gnb ul li{float:left; margin-left: 30px; font-family: 'Russo One';}
+#headerArea #gnb ul li:first-child{margin-left:0;}
+#headerArea #gnb ul li a{display:block; line-height: 110px; transition:all .3s; color: #fff;}
+#headerArea #gnb ul li:hover a{color:#5dafe3;
+    background:linear-gradient(to right, #5dafe3, #527cbb); -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;}
+/* 헤더 스크롤 시 색상변경 */
+#headerArea.sc{background: rgba(0,0,0,.8);}
+#headerArea.sc h1 a{background: url("../images/logo2.png")no-repeat; background-size: cover;} 
+
+/* 모바일 헤더 */
+#headerArea .menu_open{position:absolute; right:0; top:10px; display:none}
+#headerArea .menu_open span{width: 32px; height: 2px; background: #fff; position: relative; text-indent: -9999px; display: block; margin: 28.5px 20px; border-radius: 5px; transition: all .3s;}
+
+
+
+/* 푸터 공통 영역 */
+
+/* =============== #footerArea =============== */
+#footerArea{
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding: 3rem 1rem;
+    position: relative;
+}
+
+#footerArea .footerLogo{
+    width: 139px;
+    height: 90px;
+    margin-bottom: 1.5rem;
+    background: url("../images/logo2.png") no-repeat center;
+}
+
+#footerArea p{
+    text-align: center;
+}
+
+
+/* =============== Back to Top =============== */
+.topMove{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    background: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+
+.topMove span{
+    color: #fff;
+    font-weight: 700;
+    font-size: .9rem;
+}
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+
+	#wrap{ width:100%;}
+header{width:100%; height:50px;}
+#nav li{width:20%; float:left;}
+
+#headerArea,
+#headerArea h1 a{height: 85px;}
+#headerArea h1 a{width:85px;}
+
+
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+
+    #headerArea .headerInner{width: 100%; margin: 0;}
+	#headerArea h1{position: relative; left: 50%; margin-left: -40px;}
+    #headerArea #gnb{width: 100%; margin: 0; background: rgba(0,0,0,.8); padding: 24px 0 32px; display: none;}
+    #headerArea #gnb ul li{float: none; margin-right: 0; text-align: center;}
+    #headerArea #gnb ul li a{font-size: 1.667rem; }
+    /* hover */
+
+
+#headerArea #gnb ul li:hover a{color:#527cbb;
+    background:linear-gradient(to right, #5dafe3, #527cbb); -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;}
+ #headerArea #gnb{width: 100%; margin: 0; background: rgba(0,0,0,.8); padding: 2px 0 32px; display: none;}
+#headerArea.on #gnb ul li a{line-height:3rem; padding-bottom: 5px; display: block; text-align: center;}
+#headerArea #gnb ul li{float: none; margin-right: 0;;}
+
+
+     /*모바일 헤더 메뉴 열렸을때*/
+     #headerArea .menu_open{display: block; float: right; height: 60px; position: relative; border-radius: 5px; z-index: 110; transition: all .5s;}
+     #headerArea .menu_open span{width: 32px; height: 2px; background: #fff; position: relative; text-indent: -9999px; display: block; margin: 28.5px 20px; border-radius: 5px; transition: all .3s;}
+     #headerArea .menu_open span::before{content: ''; display: block; width: 32px; height: 2px; background: #fff; position: absolute; top: -9.5px; left: 0; border-radius: 5px; transition: all .3s;}
+     #headerArea .menu_open span::after{content: ''; display: block; width: 32px; height: 2px; background: #fff; position: absolute; top: 9.5px; left: 0; border-radius: 5px; transition: all .3s;}
+     #headerArea.mn_open{background: rgba(0,0,0,.8);}
+     #headerArea.mn_open h1 a{background: url("../images/logo2.png")no-repeat; background-size: cover;} 
+     #headerArea.mn_open .menu_open span{background: rgba(0,0,0,0);}
+     #headerArea.mn_open .menu_open span::before{transform: rotate(45deg); top: 0;}
+     #headerArea.mn_open .menu_open span::after{transform: rotate(-45deg); top: 0;}
+}
+
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+/* 헤더 높이 80 -> 60 */
+
+}
+
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+
+    html{font-size: 16px;}
+    #headerArea{height: 76px;}	
+    #headerArea h1 a{width: 47px; height: 47px; margin-top: 20px; margin-left: 15px;}
+        
+    	/* 헤더 */
+
+	/* 푸터 */
+	#footerArea{height: auto; line-height: inherit; padding:4rem 0 2rem; text-align:center;}
+	#footerArea .quicktop{padding:3.2rem 0 0;}
+	#footerArea p{float: none;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}
+

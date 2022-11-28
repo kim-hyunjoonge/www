@@ -1,0 +1,51 @@
+.main{position:relative; width: 100%; background: #333;}
+
+
+.main{position:relative; height:250px; background-image:url("../images/main.png"); background-position:50% 50%; background-repeat:no-repeat; background-size:cover;}
+.main h3{position:absolute; left:50%; top:50%; font-size:1.6875rem; letter-spacing:-0.065rem; color:#fff; transform:translate(-50%, -40%);}
+
+
+.subNav{margin: 0 20px; position: relative; top:220px;}
+.subNav ul{overflow: hidden; width: 100%; box-shadow: 0 0 5px 0 rgb(0 0 0 / 5%); text-align: center;}
+.subNav li{float: left;}
+.subNav li a{display: block; font-size: 1.071rem; padding: 12px 0; background: #fff; border: 1px solid #f8f8f8; color: #666; transition: all .5s;}
+.subNav li .current{background: #4d1f7a;; color: #fff; font-weight: 500; border: 1px solid #4d1f7a;}
+.aboutkgMenu li{width: 33.33%;}
+
+#content .titleArea{margin:3rem 0 2rem;}
+#content .titleArea h2{text-align:center; font-size:1.875rem; font-weight:700; letter-spacing:-0.065rem;}
+
+#content .contentArea h3{font-size: 1.4rem; margin: 20px 0; font-weight: 600; }
+
+
+.product{padding: 0 10px;}
+.product ul{}
+.product ul li{position: relative; margin-top: 70px;}
+.product ul li{margin-top: 0;}
+.product ul li .image{position:relative; width: 100%; height: 500px;}
+.product ul li:nth-child(1) .image{background:url(../images/content1/content1.png) 50% 50% no-repeat;}
+.product ul li:nth-child(2) .image{background:url(../images/content1/content2.png) 50% 50% no-repeat;}
+.product ul li:nth-child(3) .image{background:url(../images/content1/content3.png) 50% 50% no-repeat;}
+.product ul li .intro{position:relative; top:-150px;  background:#fff; box-sizing:border-box; overflow:hidden; box-shadow:30px 30px 30px rgba(0,0,0,0.15); border-bottom:5px solid #4d1f7a;
+    transform:translate(0, 50px);}
+
+.product ul li .intro h3{font-size:2.1875rem; letter-spacing:-0.045rem;}
+.product ul li .intro .info{ font-size:1.125rem; line-height: 2; color:#666;}
+.product ul li .intro .info div{margin:50px -13px 60px 1px; overflow: hidden; text-align: center;}
+.product ul li .intro .info div a{float:left; position:relative; width: calc(50% - 3%); margin:10px 0 0 10px; font-size: 1rem; color:#fff; letter-spacing:-0.045rem; background:#4d1f7a;  padding:30px 25px; box-sizing:border-box; height: 100px;}
+.product ul li .intro .info div a:nth-child(2n+1){margin-left:0;}
+.product ul li .intro .info div a:nth-child(-n+2){margin-top:0;}
+.product ul li .intro .info div a span{position:relative; display:block; background:url() 100% 50% no-repeat; background-size:13px auto; z-index:2;}
+
+.product .modalBox{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: #000; opacity: .7; display: none;}
+.product  .popup{position: fixed; top:20%; left: 10%; 
+    width: 80%; height: 500px; background: #fff; box-shadow: 1px 3px 7px 0px #666;
+    z-index: 60; display:none;}
+.product  .popup img{width: 40%; margin: 20px 30%;height: 200px;}
+.product  .popup dl{width: 94%; margin:10px 3%; text-align: center; font-size: 1rem;}
+.product  .popup dt{font-size: 1.3rem; font-weight: bold; margin-bottom: 10px; color: orange;}
+
+.product  .popup .close_btn{position: absolute; top: 25px; right: 5px; 
+    display: block; text-indent: -999px; overflow: hidden; width: 32px; 
+    height: 32px; padding: 9px 9px; background: url(../images/content1/cancel.png) no-repeat;}

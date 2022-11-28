@@ -1,0 +1,63 @@
+/*kg케미칼 소개  본문 영역 */
+#content{width: 1200px; margin: 0 auto; }
+#content h2{ font-size: 50px; text-align: center; margin: 100px 0 0 0;}
+#content h3{ font-size: 40px; text-align: center; margin: 100px 0 0 0;}
+
+#content .contentArea .navBox{ text-align: center; overflow: hidden; margin-top: 100px;}
+#content .contentArea .navBox ul{overflow: hidden; margin: 0 auto;}
+#content .contentArea .navBox ul li::after{content: ''; display: block; width: 1400px; height: 1px; background: #ddd; position: absolute; top: -12px; right: -200px;}
+#content .contentArea .navBox li{float: left; margin: 20px 150px 0 300px; text-align: center; position: relative;}
+#content .contentArea .navBox a{font-size: 20px; color: #666; display: block;  transition: all .3s ease-out;}
+#content .contentArea .navBox a:hover{color: #4d1f7a;}
+#content .contentArea .navBox .current{color: #4d1f7a;}
+#content .contentArea .navBox .current a::after{content:''; border: 1px solid #4d1f7a; background: #4d1f7a;}
+
+
+
+
+
+
+#content .contentArea .slogun{ text-align: center; font-size: 1.5em; line-height: 2em;margin: 50px 0 50px 0;}
+#content .contentArea .slogun p:nth-child(1){font-size: 30px; font-weight: bold; margin-top: 20px;}
+#content .contentArea .slogun p:nth-child(2){text-align: center; line-height: 2em; margin-top: 15px;}
+#content .contentArea a::after{content:''; width: 10px; height: 10px; border-radius: 50%; background: #ccc; position: absolute; left: 50%; bottom: 35px; margin-left: -5px; z-index: 1;}
+#content .contentArea a:hover::after{content:''; border: 1px solid #4d1f7a; background: #4d1f7a;}
+
+#content .contentArea .introDuction{margin-top: 50px;}
+#content .contentArea .introDuction img{width: 550px; margin-top: 100px; border-radius: 35px;}
+#content .contentArea .introDuction  li{overflow: hidden;}
+#content .contentArea .introDuction ul li:nth-child(2) img{float: right; margin-left: 20px;}
+#content .contentArea .introDuction ul li:nth-child(2) dl{float:left; margin-left: 20px;}
+#content .contentArea .introDuction  dl{width:550px; float: right;}
+#content .contentArea .introDuction dl dt{font-size: 30px; color: #4d1f7a;margin: 150px 0 0 0; font-weight: bold;}
+#content .contentArea .introDuction dl dd{margin: 30px 0 0 0; line-height: 2em; text-align: left;}
+#content .contentArea .introDuction dl dd:nth-child(3){font-weight: bold; font-size: 20px;}
+#content .contentArea .introDuction dl span{color: #4d1f7a; font-weight: bold;}
+
+
+
+
+
+#content .wayHome{margin: 100px 0 200px 0; overflow: hidden;}
+#content .wayHome div:nth-child(1) p{margin-top: 60px;}
+
+#content .wayHome #home{width: 100%; height: 600px;}
+
+#content .wayHome .location{padding: 70px 0;}
+#content .wayHome .location dl{display: block; clear: both; margin-top: 50px;}
+
+#content .wayHome .location dl dt{float:left; font-size:1.5em; font-weight:bold; letter-spacing:-0.025rem;}
+#content .wayHome .location dl:nth-child(2) dt{margin: 120px 0 0 0;}
+#content .wayHome .location dl dt span{display: block; font-size:1.125rem; font-weight: 300; margin:5px 0 0;}
+#content .wayHome .location dl dd{float:right; width: 850px; padding-left:70px; border-left:1px solid #999; box-sizing:border-box; line-height:1.8em; font-size:1.2em; color:#666;}
+#content .wayHome .location dl dd ul li{overflow:hidden; margin:10px 0 0;}
+#content .wayHome .location dl:nth-child(2) dd ul li+li{border-top:1px solid #999; padding-top:40px; margin-top:40px;}
+#content .wayHome .location dl dd ul li > span{float:left; color:#333; font-weight:700;}
+#content .wayHome .location dl dd ul li p{padding-left:105px;}
+#content .wayHome .location dl dd ul li p span{display:block;}
+
+
+
+
+
+

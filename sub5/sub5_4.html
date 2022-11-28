@@ -1,0 +1,98 @@
+<?
+   session_start();
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객지원-문의하기</title>
+    <link rel="shortcut icon" href="../pavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="../sub5/common/css/sub5common.css">
+    <link rel="stylesheet" href="../sub5/css/sub5_content4.css">
+
+    
+    <script src="https://kit.fontawesome.com/0e5abf2d10.js" crossorigin="anonymous"></script>
+    <script src="../common/js/prefixfree.min.js"></script>
+
+    <style>
+        
+#mailAddress{width:80%; border:1px solid #ccc; border-radius:10px; margin:0 100px 5%;
+   padding:20px 5%}
+#mailAddress li{ margin-bottom:15px}
+#mailAddress input, textarea{width:90%; border-radius:5px; border:0; padding:10px 5%;
+      background:#F0F0F0}
+label{position: relative;}
+label::before{position: absolute; content: '*'; color: #e60012; font-size: 22px;font-weight: 700; left: -15px; top: 0;}
+.nece{padding-left: 8%;}
+.nece span{color: #e60012;}
+.submitBtn{margin-left: 3%;}
+
+    </style>
+</head>
+<body>
+    <?include "../common/sub_header.html" ?>
+    <div class="main">
+        <img src="./images/visual1.jpg" alt="">
+        <h2>고객지원</h2>
+    </div>
+    <div class="subNav">
+        <ul>
+            <li><a href="../greet/list.php">공지사항</a></li>
+            <li><a href="../news/list.php">뉴스룸</a></li>
+            <li><a href="./sub5_3.html">FAQ</a></li>
+            <li><a class="current" href="./sub5_4.html">문의하기</a></li>
+        </ul>
+    </div>
+        <article id="content">
+            <div class="titleArea">
+                <div class="lineMap">
+                    <span>home</span>&gt; <span>고객지원</span>&gt; <strong>문의하기</strong>
+                </div>
+                <h2>문의하기</h2>
+            </div>
+            <div class="contentArea">
+            <div class="slogun">
+                <p>KG케미칼 문의하기 페이지입니다.</p>
+                <p>고객의 편의를 위해서 가능한 빠르게 답변 드리겠습니다.</p>
+            </div>
+    
+   
+        <h3 class="hidden">문의하기</h3>
+        <p class="nece"><span>*</span> 은 필수 입력 사항입니다.</p>
+        <div id="mailAddress">
+          
+            <form action="./php/mail.php" method="post">
+               <ul>
+                <li>
+                    <label for="name">이름</label>
+                    <input type="text" id="uname" name="uname" placeholder="이름 입력창" required>
+                </li>
+                <li>
+                    <label for ="email">이메일 주소</label>
+                    <input type="text" id="email" name="email" placeholder="이메일 주소 입력창" required></li>
+                <li>
+                    <label for ="phone">휴대폰 번호</label>
+                    <input type="text" id="phone" name="phone" placeholder="핸드폰 번호입력창" required>
+                </li>
+                <li>
+                    <label for ="message">문의내용</label>
+                    <textarea name="message"  placeholder="문의내용 입력" cols="50" rows="15" required></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="보내기" class="submitBtn" required>
+                </li>
+              </ul>
+            </form>
+    </div>
+    </div>
+        </article>
+    </div>
+        <?include "../common/sub_footer.html" ?>
+        <script src="../common/js/jquery-1.12.4.min.js"></script>
+        <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+        <script src="../common/js/fullnav.js"></script>
+</body>
+</html>

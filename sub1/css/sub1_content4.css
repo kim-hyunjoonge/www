@@ -1,0 +1,35 @@
+#content .contentArea .slogun{ text-align: center; font-size: 1.5em; line-height: 2em;margin: 50px 0 50px 0;}
+#content .contentArea .slogun p:nth-child(1){font-size: 30px; font-weight: bold; margin-top: 20px;}
+#content .contentArea .slogun p:nth-child(2){text-align: center; line-height: 2em; margin-top: 15px;}
+#content .contentArea .visionBox ul li dl dt{font-size: 2em; color: #4d1f7a; font-weight: bold;}
+
+#content .contentArea{width: 1200px; overflow: hidden; position: relative;}
+
+#content .contentArea .visionBox ul{overflow: hidden; }
+#content .contentArea .visionBox ul li{margin-top: 200px;}
+#content .contentArea .visionBox ul li dl{width: 400px; float: left;}
+#content .contentArea .visionBox ul li:nth-child(1) dl{margin-left: 100px;}
+#content .visionBox ul li dl dt{font-size: 35px;}
+#content .visionBox ul li dl dd{line-height: 3em;}
+#content .visionBox ul li dl dd span{font-size: 25px; font-weight: 500;}
+#content .visionBox ul li dl .visionContent{font-size: 25px; width: 500px; font-weight: 500;}
+
+#content .visionBox ul li:nth-child(1) img{margin-left: 200px;}
+#content .visionBox ul li:nth-child(2) img{float: left; margin-right: 200px;}
+
+
+#content .valueBox{margin-top: 200px; overflow: hidden; position: relative;}
+#content .valueBox h3{color: #4d1f7a; font-size: 2em;}
+#content .valueBox dl{width: 500px; height: 340px; margin-top: 100px; float: left; margin-right: 100px;}
+#content .valueBox .valueOdd{float: right; margin-right: 0;}
+#content .valueBox dl::before{content: ''; display: block; width: 2000px; height: 1px; background: #efefef; position: absolute; top: 450px; left: 50%; margin-left: -1000px;}
+#content .contentArea .valueBox .tabBox .tabMenu{overflow: hidden;}
+#content .valueBox dl dt{font-size: 30px; font-weight: 600;}
+#content .valueBox dl dt{color: #ed912b;}
+#content .valueBox dl:nth-child(3) dt{color:#db1679;}
+
+#content .valueBox dl:nth-child(4) dt{color: #4d1f7a;}
+#content .valueBox dl dt span{color: #999; font-weight: 300; font-size: 15px; margin-left: 20px;}
+#content .valueBox dl .subTitle{font-size: 25px; margin:20px 0 30px 0;}
+
+

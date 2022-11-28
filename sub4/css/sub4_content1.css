@@ -1,0 +1,15 @@
+#content .contentArea .slogun{ text-align: center; font-size: 1.5em; line-height: 2em;margin: 50px 0 50px 0;}
+#content .contentArea .slogun p:nth-child(1){font-size: 30px; font-weight: bold; margin-top: 20px;}
+#content .contentArea .slogun p:nth-child(2){text-align: center; line-height: 2em; margin-top: 15px;}
+
+#content .contentArea .introDuction{margin-top: 50px; padding-bottom: 200px;}
+#content .contentArea .introDuction img{width: 550px; margin-top: 100px; border-radius: 100%;}
+#content .contentArea .introDuction  li{overflow: hidden;}
+#content .contentArea .introDuction ul li:nth-child(2) img{float: right; margin-left: 20px;}
+#content .contentArea .introDuction ul li:nth-child(2) dl{float:left; margin-left: 20px;}
+#content .contentArea .introDuction  dl{width:550px; float: right; margin-top: 150px;}
+#content .contentArea .introDuction dl dt{font-size: 30px; color: #4d1f7a;margin: 150px 0 0 0; font-weight: bold;}
+#content .contentArea .introDuction dl dd{margin: 30px 0 0 0; line-height: 2em; text-align: left;}
+#content .contentArea .introDuction dl dd:nth-child(3){font-weight: bold; font-size: 20px;}
+#content .contentArea .introDuction dl span{color: #4d1f7a; font-weight: bold;}
+

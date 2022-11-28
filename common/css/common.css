@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+/* CSS Reset */
+
+html, body, div , span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video{margin: 0; padding: 0; border: 0; font-size: 100%;}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section{display: block;}
+body{font-family: 'Noto Sans KR', sans-serif; font-size: 18px;color: #333}
+ol, ul{list-style: none;}
+table{border-collapse: collapse; border-spacing: 0;}
+address{font-style: normal}
+a{color: #333; text-decoration: none}
+img{border: 0; vertical-align: top}
+.hidden{display: block; position: absolute; left: -1000%; width: 1px; height: 1px; overflow: hidden; color: #fff;}
+#skipNav{position: relative; width: 100%; overflow: hidden; z-index: 60;}
+#skipNav a{display: block; height: 1px; margin-bottom: -1px; font-size: 1.2em; color: #333; overflow: hidden; text-align: center; font-size: 1.2em;}
+#skipNav a:hover, #skipNav a:focus, #skipNav a:active{
+    height: auto; padding: 10px 0; background: #f2f2f2;
+}
+
+.wrap{width: 100%; overflow: hidden;}
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+
+ /* header 공통영역 */ 
+ #headerArea{width:100%; height: 220px;
+    position: fixed; left:0; top:0; background: rgba(255,255,255,0); z-index: 10; transition: background .5s;}
+#headerArea .headerInner{width: 1200px; margin: 0 auto;}
+#headerArea .headerInner::after{content:''; display: block; clear: both;}
+#headerArea #gnb{clear:both;width:1200px;} 
+   
+#headerArea #gnb ul.dropdownmenu{float:left; width: 100%;}
+#headerArea #gnb ul.dropdownmenu li.menu{position:relative;float:left; width:16.66%; height: 56px; }
+   
+#headerArea #gnb ul.dropdownmenu li a.depth1{display:block; padding: 15px 0;  color: #fff;
+             text-align: center; transition: all .5s; font-size: 20px;}
+
+#headerArea #gnb ul.dropdownmenu li ul li{ text-align:center; font-weight:bold;}
+
+
+#headerArea  #gnb ul.dropdownmenu li ul{position:absolute; top:56px; left:0; width:100%; 
+    height:200px; padding:10px 0; display:none; transition:background .3s; box-sizing:border-box;}
+#headerArea  #gnb ul.dropdownmenu li ul li a{display:block; font-size: 18px; font-weight: 400; padding: 3px 0;  color:#666; transition: all .2s ease-in-out;}
+#headerArea .dropdownmenu > li ul li:hover a{color:#3f2672;}
+#headerArea .dropdownmenu li ul li:hover a{color:#3f2672;}
+
+
+#headerArea .logo{width: 180px;position: absolute; top:15px; left:50%; margin-left: -90px;}
+#headerArea .logo a{width: 180px; height: 93px; display: block; text-indent: -9999px; background:url(../images/logo.jpg)}
+#headerArea .topMenu{float: right; margin: 70px 50px 40px 0;}
+#headerArea .topMenu ul{overflow: hidden;}
+#headerArea .topMenu li{float: left; margin-right: 15px;}
+#headerArea .topMenu ul li a{display: block; height: 20px; line-height: 20px; color:#333; font-size: .93rem; transition:color .3s;}
+#headerArea .topMenu ul li:hover a{color:#3f2672;}
+
+/* footer 공통영역 */ 
+#footerArea {background: #efefef; height: 300px; position: relative;}
+#footerArea::before{content: ''; display: block;width:100%; height: 1px;
+background: #ccc; position: absolute; left:0; top:130px; z-index: 20;}
+#footerArea .footerInner{width: 1200px; margin: 0 auto; overflow: hidden; position: relative;}
+#footerArea .fnb{ overflow: hidden;}
+.footerInner .fnb img{float: left; margin-top: 15px;}
+.footerInner .footerLink{float: left; overflow: hidden; margin-top: 80px;}
+.footerInner .footerLink li{float:left; margin-left: 50px;}
+
+.footerInner .sns{ float: right; margin: 80px 0 0 0;}
+.footerInner .sns ul{overflow: hidden; padding: 15px 0;}
+.footerInner .sns ul li{float: left; margin-left: 15px;}
+.footerInner .sns a i{transition: all .2s ease-out; font-size: 24px; color: #999; display: block;}
+.footerInner .sns a i:hover{color: #3f2672; transform: scale(1.2);}
+.footerInner address{margin-top: 20px;}
+.footerInner .copy{margin-top: 20px;}
+
+#footerArea .family{float: right; margin: 16px 30px 16px 0; width: 200px; height: 26px; border: 1px solid #999; border-radius: 4px; padding: 8px 0 15px 16px; position: absolute; bottom: 0; right: 10px;}
+#footerArea .family a{display: block; font-weight: 500; font-size: 0.875em; color: #666; line-height: 47px; position: relative;}
+
+#footerArea .family ul li a{transition: all .5s ease-out; display: block; padding: 20px 0 20px 20px; background: #fff; color: #333;}
+#footerArea .family ul li a:hover{background-color: #3f2672; color: #fff;}
+#footerArea .family i{display:block; font-weight: 700; line-height: 16px; color: #666; position: absolute; right: 16px; top: 10px;}
+
+#footerArea .family .list{width: 200px; position: absolute; top: -175px; left: -1px; color: #333; display: none; z-index: 50;}
+#footerArea .family .list li{line-height: 1.3em;}
+#footerArea .family .list li a{display: block; background: #f1f1f1; padding: 10px 0 10px 15px; font-size: 16px; border: 1px solid #ccc; width: 200px; height: 36px;}
+#footerArea .family .arrow{display:block; height: 47px; color:#666; line-height:47px;  box-sizing:border-box; padding-left:10px; padding-bottom: 10px; cursor:pointer; transition-duration:.3s;}
+#footerArea .family .arrow.on{background-color:#444; color:#333;}
+
+
+/* 
+#footerArea .footer_right .family .list{width: 172px; position: absolute; top: -191px; left: -1px; color: #fff; display: none;}
+#footerArea .footer_right .family .list li{line-height: 1.3em;}
+#footerArea .footer_right .family .list li a{display: block; background: #f1f1f1; padding: 10px 0 10px 15px; font-size: 16px;}
+#footerArea .footer_right .family .list li:hover a{background: #ccc;} */
+
+
+#footerArea .topMove{position:fixed; left:50%; bottom:50px; margin-left:650px; display:block; z-index: 80;}
+#footerArea .topMove a{display: block; width: 80px; height: 80px;  background: url(../images/quicktop.png)0 0 no-repeat rgba(63, 38, 114, 1);
+      bottom:100px; overflow: hidden; transition: background .3s; text-indent: -999px; float: right; z-index: 80;}
+#footerArea   .topMove a:hover{background-position:0 -80px;}
+
+
+
+
+
+
+
+
+

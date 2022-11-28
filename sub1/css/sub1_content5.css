@@ -1,0 +1,27 @@
+#content .contentArea .slogun{ text-align: center; font-size: 1.5em; line-height: 2em;margin: 50px 0 50px 0;}
+#content .contentArea .slogun p:nth-child(1){font-size: 30px; font-weight: bold; margin-top: 20px;}
+#content .contentArea .slogun p:nth-child(2){text-align: center; line-height: 2em; margin-top: 15px;}
+
+#content .contentArea  h3{font-weight: bold; font-size: 40px; margin-top: 80px;}
+#content .contentArea .kgIden{overflow: hidden;}
+#content .contentArea .kgIden dl dt{color: #4d1f7a; font-size: 30px; font-weight: 500;}
+#content .contentArea .kgIden .ciInt img{float: right; margin-top: 200px;}
+#content .contentArea .kgIden .ciInt{border-bottom: 1px solid #ccc;}
+#content .contentArea .kgIden  dl{width: 600px; margin:100px 100px 100px 0;}
+#content .contentArea .kgIden dl dd{line-height: 2em;}
+#content .contentArea .kgIden  dl dd{margin-top: 80px;}
+#content .contentArea .kgIden .ciInt dl:nth-last-child(1) dd{margin-bottom: 100px;}
+#content .contentArea .kgIden .symBol img{float: right; margin-top: 20px;}
+#content .contentArea .kgIden .symBol{border-bottom: 1px solid #ccc; margin-bottom: 100px;}
+#content .contentArea .kgIden .symBol dl:nth-last-child(1) dt{margin-top: 100px;}
+#content .contentArea .kgIden .symBol .symImg{margin-top: 120px;}
+
+#content .contentArea .colorSystem h3{margin-bottom: 100px;}
+#content .contentArea .colorSystem {clear:both; overflow:hidden; margin-bottom:200px;}
+#content .contentArea .colorSystem li{display:inline-block;  width:200px; margin: 100px 80px 0 100px;}
+#content .contentArea .colorBox  {width:100%; padding:15px 15px 17px; color:#fff; font-size:18px; letter-spacing:-0.05em; font-weight:bold; line-height:1.5em;}
+#content .contentArea .colorBox strong {font-size:20px; font-weight:bold; display:block;}
+#content .contentArea .colorText{padding-left: 13px;}
+#content .contentArea .colorText span{display:block;  font-size:12px; letter-spacing:-0.05em; font-weight:bold; line-height:2.5em; color:#888;}
+#content .contentArea .colorText span strong {font-size:14px; font-weight:bold; display:block; color:#333;}
+#content .contentArea .colorSystem .bottomBox{margin: 100px 0 0 230px;}

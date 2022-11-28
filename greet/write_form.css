@@ -1,0 +1,57 @@
+/******************************** write **********************************/
+.bbs_write_top{border-top:1px solid #999;}
+.bbs_write_top li{border-bottom:1px solid #ddd;}
+.bbs_write_top li dl{background:#f2f2f2;}
+.bbs_write_top li dl::after{content:''; display: block; clear: both;}
+.bbs_write_top li dl dt,
+.bbs_write_top li dl dd{padding:20px;}
+.bbs_write_top li dl dt{float:left;}
+.bbs_write_top li dl dt label{line-height:44px;}
+.bbs_write_top li dl dd{margin-left:15%; background:#fff;}
+.bbs_write_top #subject{width:100%; height: 40px;}
+.bbs_write_top textarea{width: 100%; height: 300px;}
+.bbs_write_top #content{width:100%;}
+.bbs_write_top + .btn_wrap{padding:20px 0 0;}
+#content{margin-bottom: 100px;}
+
+/* checkbox */
+.bbs_wrap .bbs_write_top .check{position:relative; padding-left:35px; line-height:25px; margin:0 0 10px;}
+.bbs_wrap .bbs_write_top .check input[type=checkbox] + label::before {
+    position:absolute; left:0; top: 0;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: 2px solid #ccc;
+    box-sizing:border-box;
+    content: '';
+}
+
+/* 버튼 */
+.btn_wrap{text-align:right; margin:0 -2px}
+ .btn_wrap a,
+ .btn_wrap button{display: inline-block; height:44px; line-height:42px; margin:0 2px; vertical-align:top; padding:0 25px; background:transparent; color:#888; border:1px solid #ddd; box-sizing:border-box; cursor:pointer; transition:all .3s; font-size:1rem;}
+ .btn_wrap a:hover,
+ .btn_wrap button:hover{border-color:#333; color:#333;}
+ .btn_wrap .active{border-color:#4d1f7a; ; color:#4d1f7a; }
+ .btn_wrap .active:hover{background:#4d1f7a;  color:#fff;}
+
+
+ /******************************** view **********************************/
+.bbs_view_ttl{border-top:1px solid #999;}
+.bbs_view_ttl li{border-bottom:1px solid #ddd; padding:20px;}
+.bbs_view_ttl li:first-child{background:#f2f2f2; font-weight:700;}
+.bbs_view_ttl li span{display:inline-block; color:#888;}
+.bbs_view_ttl li span + span::before{content:'/'; display:inline-block; padding:0 10px; color:#ddd;}
+.bbs_view_ttl li span i{font-size:.75rem; padding-right:2px;}
+.bbs_view_ttl li span i i{font-size:0; text-indent:-9999%;}
+
+.bbs_view_cont{min-height:200px; padding:20px; overflow: hidden;}
+.bbs_view_cont img{max-width: 100%;}
+.bbs_view_cont::after{content:''; display: block; clear: both;}
+
+.bbs_view_cont + .btn_wrap{border-top:1px solid #ddd; padding:20px 0 0;}
+
+
+
+

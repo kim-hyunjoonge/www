@@ -1,0 +1,45 @@
+header h1 a {
+    display: inline-block;
+    height: 105px;
+    width: 200px;
+    background: url(../../common/images/logo.jpg) 0 0 no-repeat;
+    text-indent: -9999%;
+    margin-top: 40px;
+    overflow: hidden;
+}
+ul{list-style: none;}
+a{text-decoration: none; color: inherit;}
+h1{text-align: center;}
+body{background: #efefef;}
+#wrap{margin-top: 70px;}
+
+fieldset{border: 0;}
+
+#content{
+    position: relative;
+    width: 650px;
+    margin: 0 auto 100px;
+    padding: 60px;
+    box-sizing: border-box;
+    background: #fff;
+    box-shadow: 10px 10px 20px rgb(0 0 0 / 5%);
+}
+#content h2 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+#content #title p{
+    text-align: center;
+    color: #999;
+}
+input{width: 100%; line-height: 57px; font-size: 1.125rem; padding: 0 0 0 10px; box-sizing: border-box; 
+    border:1px  solid #ddd; outline: 0; margin: 10px 0;}
+#id_input_button .find{position: relative; width: 100%; line-height: 60px; font-size: 1.24rem; color: #fff; background: #4d1f7a; text-align: center; margin: 20px 0 0; cursor: pointer;}
+
+#hp1,#hp2,#hp3{width: 29%; height: 60px; line-height: 57px; font-size: 1.125rem; box-sizing: border-box; 
+    border:1px  solid #ddd; outline: 0;}
+
+.go{text-align: center; color: #999; margin-top: 20px; margin-right: 20px;}
+
+#join_button{text-align: center;margin-top: 20px; }
+#join_button .go_join{color: #999; transition: all .3s;}

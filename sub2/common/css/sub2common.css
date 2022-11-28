@@ -1,0 +1,15 @@
+/* 서브페이지 공통영역 */
+.main{width: 2000px; height: 500px; position: relative; left: 50%; top: 0; margin-left: -1000px;}
+.main h2{font-size: 2.5em; color: #fff;position: absolute; left: 50%; top: 300px; margin-left: -100px; font-weight: 400;}
+.subNav{border-bottom: 1px solid #ccc;}
+.subNav ul{width: 400px; margin:  0 auto; overflow: hidden;}
+.subNav ul li{float: left; width: 200px; text-align: center;}
+.subNav ul li a{display: block; padding: 20px 0; color: #333; font-weight: bold; transition: all .5s ease-out; font-size: 1.2em;}
+.subNav ul li a:hover{background: #4d1f7a; color: #fff; font-size: 1.2em;}
+.subNav ul li .current{background: #4d1f7a; color: #fff; font-size: 1.2em;}
+
+#content{width: 1200px; margin: 0 auto;}
+#content .titleArea{position: relative; padding-top: 100px;}
+#content .titleArea .lineMap{ color: #999; position: absolute; top: 30px; right: 140px;}
+#content .titleArea h2{font-size: 3em; font-weight: bold; text-align: center; margin: 70px 0 100px;}
+

@@ -1,0 +1,40 @@
+#content .contentArea .slogun{text-align: center; font-size: 1.5em; line-height: 2em; margin: 50px 0 50px 0;}
+#content .contentArea .slogun p:nth-child(1){font-size: 33px; font-weight: bold; margin-top: 20px; color: #4d1f7a;}
+#content .contentArea .slogun p:nth-child(2){margin-top: 15px; margin-bottom: 200px;}
+#content .contentArea h3{font-size: 40px; text-align: center; margin:  20px 0 0 50px;}
+
+
+.product{}
+.product ul{}
+.product ul li{position: relative; margin-top: 70px;}
+.product ul li{margin-top: 0;}
+.product ul li .image{position:relative; left: 50%; margin-left:-1000px; width: 2000px; height: 500px;}
+.product ul li:nth-child(1) .image{background:url(../images/content1/content1.png) 50% 50% no-repeat;}
+.product ul li:nth-child(2) .image{background:url(../images/content1/content2.png) 50% 50% no-repeat;}
+.product ul li:nth-child(3) .image{background:url(../images/content1/content3.png) 50% 50% no-repeat;}
+.product ul li .intro{position:relative; top:-150px; padding:80px; background:#fff; box-sizing:border-box; overflow:hidden; box-shadow:30px 30px 30px rgba(0,0,0,0.15); border-bottom:5px solid #4d1f7a;
+    transform:translate(0, 50px);}
+
+.product ul li .intro h3{float:left; font-size:2.1875rem; letter-spacing:-0.045rem;}
+.product ul li .intro .info{margin-left:300px; font-size:1.125rem; line-height: 2; color:#666;}
+.product ul li .intro .info p{text-align:justify;}
+.product ul li .intro .info div{margin:50px 0 0; overflow: hidden;}
+.product ul li .intro .info div a{float:left; position:relative; width: calc(50% - 5px); margin:10px 0 0 10px; /*height: 50px;*/ line-height: 60px; font-size:1.125rem; color:#fff; letter-spacing:-0.045rem; background:#4d1f7a;  padding:0 25px; box-sizing:border-box;}
+.product ul li .intro .info div a:nth-child(2n+1){margin-left:0;}
+.product ul li .intro .info div a:nth-child(-n+2){margin-top:0;}
+.product ul li .intro .info div a span{position:relative; display:block; background:url() 100% 50% no-repeat; background-size:13px auto; z-index:2;}
+.product ul li .intro .info div a::before{content:''; position:absolute; left:0; top: 0; width: 0; height: 100%; background: #7d2787; transition:all .3s;}
+.product ul li .intro .info div a:hover::before{width:100%;}
+
+.product .modalBox{position: fixed; left: 0; top: 0; z-index: 50; width: 100%; height: 100%; 
+    background: #000; opacity: .7; display: none;}
+.product  .popup{position: fixed; top: 50%; left: 50%; margin: -300px 0 0 -300px; 
+    width: 600px; height: 600px; background: #fff; box-shadow: 1px 3px 7px 0px #666;
+    z-index: 60; display:none;}
+.product  .popup img{width: 40%; margin: 20px 30%;height: 300px;}
+.product  .popup dl{width: 94%; margin:10px 3%; text-align: center;}
+.product  .popup dt{font-size: 1.2em; font-weight: bold; margin-bottom: 10px; color: orange;}
+
+.product  .popup .close_btn{position: absolute; top: 25px; right: 5px; 
+    display: block; text-indent: -999px; overflow: hidden; width: 32px; 
+    height: 32px; padding: 9px 9px; background: url(../images/content1/cancel.png) no-repeat;}

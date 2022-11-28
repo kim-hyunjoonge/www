@@ -1,0 +1,58 @@
+
+.main{position:relative; width: 100%; background: #333;}
+
+
+.main{position:relative; height:250px; background-image:url("../images/main1.png"); background-position:50% 50%; background-repeat:no-repeat; background-size:cover;}
+.main h3{position:absolute; left:50%; top:50%; font-size:1.6875rem; letter-spacing:-0.065rem; color:#fff; transform:translate(-50%, -40%);}
+
+
+.subNav{margin: 0 20px; position: relative; top:220px;}
+.subNav ul{overflow: hidden; width: 100%; box-shadow: 0 0 5px 0 rgb(0 0 0 / 5%); text-align: center;}
+.subNav li{float: left;}
+.subNav li a{display: block; font-size: 1.071rem; padding: 12px 0; background: #fff; border: 1px solid #f8f8f8; color: #666; transition: all .5s;}
+.subNav li .current{background: #4d1f7a;; color: #fff; font-weight: 500; border: 1px solid #4d1f7a;}
+.aboutkgMenu li{width: 50%;}
+
+
+
+#content .titleArea{margin:3rem 0 2rem;}
+#content .titleArea h2{text-align:center; font-size:1.875rem; font-weight:700; letter-spacing:-0.065rem;}
+#content{text-align: center;}
+#content h2{font-weight: 700; font-size: 2rem; margin: 26.2px 0 0; position: relative;}
+#content h2::before{content: ''; display: block; width: 1px; height: 20px; background: #999; position: absolute; top: 55px; left: 50%; margin-left: -0.5px;}
+#content .contentArea2 h3{margin-top: 100px;}
+#content h3{font-weight: 500; font-size: 1.45rem; margin: 26.2px 0 0; position: relative;}
+
+#content>div>h3{font-weight: 500; font-size: 1.414rem; color: #333; margin-bottom: 10px;}
+#content>div>p{font-size: 1.143rem; color: #666; margin: 0 20px; line-height: 1.5em;}
+#content>div>p>span{color: #4d1f7a;}
+.contentArea1 .swiper{width: 100%; height: 100%; margin-top: 24px; position: relative;}
+.contentArea1 .swiper-slide{height: 259.4px; text-align: left; position: relative;}
+.contentArea1 .swiper-slide:last-child:before{background: none;}
+.contentArea1 .swiper-slide dl{margin: 32px 24px; position: relative;}
+.contentArea1 .swiper-slide dl::before{content: ''; display: block; width: 50px; height: 1px; background: #4d1f7a; position: absolute; top: 115px; left: 0;}
+.contentArea1 .swiper-slide dt{font-weight: 700; font-size: 1.286rem; color: #4d1f7a; margin-bottom: 16px;}
+.contentArea1 .swiper-slide dt span{display: block; font-family: 'Roboto', sans-serif; font-weight: 400; font-size: 1rem;}
+.contentArea1 .swiper-slide dd{line-height: 1.5em;}
+.contentArea1 .swiper-slide ul{line-height: 1.5em; color: #666; margin: 0 24px 32px;}
+.contentArea1 .swiper-slide ul li{margin: 0 0 0 12px; position: relative;}
+.contentArea1 .swiper-slide ul li::before{content: ''; display: block; width: 4px; height: 4px; background: #999; border-radius: 100%; position: absolute; left: -12px; top: 10px;}
+.contentArea1 .swiper .swiper-pagination{top: 310px; opacity: .5; background: #4d1f7a;}
+
+#content .contentArea2 .tabBox{ text-align: center; position: relative; margin-top: 10%;}
+#content .contentArea2 .tabBox::before{content: ''; display: block; width: 100%; height: 1px; background: #ccc; position: absolute; top: 80%;  }
+#content .contentArea2 .tabBox .tabMenu{overflow: hidden;}
+#content .contentArea2 .tabBox .tabMenu li{float: left; width: 25%;}
+#content .contentArea2 .tabBox .tabMenu li:last-of-type{margin-right: 0;}
+#content .contentArea2 .tabBox .tabMenu li .tab{display: block; font-weight: 400; font-size: 1.25em; line-height: 25px; color: #666; position: relative;}
+#content .contentArea2 .tabBox .tabMenu li:hover .tab::before{transform: scale(1.6); background-color: #4d1f7a;}
+#content .contentArea2 .tabBox .tabMenu li a{transition: all .4s ease-out; display: block; margin-bottom: 30px;}
+#content .contentArea2 .tabBox .tabMenu li .bedock::before{content: ''; display: block; width: 12px; height: 12px; border-radius: 100%; background: #cecece; position: absolute; left: 50%; bottom: -25px; margin-left: -6px; transition: all 0.5s;}
+#content .contentArea2 .tabBox .tabMenu .current::after{content: ''; display: block; width: 15px; height: 15px; border-radius: 100%;  position: absolute; left: 50%; bottom: 10px; margin-left: -10.21px; }
+#content .contentArea2 .tabBox .tabMenu .current::before{content: ''; display: block; width: 12px; height: 12px; border-radius: 100%; background: #4d1f7a; position: absolute; left: 50%; bottom: -25px; transition: all 0.5s; margin-left: -6px;}
+
+#content .contentArea2 .historyBox dl{overflow: hidden;  padding: 40px}
+#content .contentArea2 .historyBox dl:last-of-type{border-bottom:none; margin-bottom: 80px;}
+#content .contentArea2 .historyBox dl dt{font-weight: bold; font-size: 1.6rem; color: #4d1f7a; float: left; }
+#content .contentArea2 .historyBox dl dd{ color: #333;  margin-top: 20%;}
+#content .contentArea2 .historyBox dl dd span{display: block; font-weight: 500; font-size: 1em; color: #999; margin-right: 24px;}

@@ -1,0 +1,51 @@
+#content .contentArea .slogun{text-align: center; font-size: 1.5em; line-height: 2em; margin: 50px 0 50px 0;}
+#content .contentArea .slogun p:nth-child(1){font-size: 33px; font-weight: bold; margin-top: 20px; color: #4d1f7a;}
+#content .contentArea .slogun p:nth-child(2){margin-top: 15px;}
+#content .contentArea h3{font-size: 40px; text-align: center; margin:  200px 0 150px 0;}
+#content .contentArea img{display: block; margin:100px 0 100px 180px;}
+
+#content .contentArea .eventSlidemenu{width: 1210px; height: 380px; overflow: hidden; margin-bottom: 120px; margin-top: 100px;}
+#content .contentArea .eventSlidemenu .eventMenu{width: 200px; height: 375px; float: left;}
+#content .contentArea .eventSlidemenu .menu01{background-image: url(../images/content2/R&D1.jpg);}
+#content .contentArea .eventSlidemenu .menu02{background-image: url(../images/content2/R&D2.jpg);}
+#content .contentArea .eventSlidemenu .menu03{background-image: url(../images/content2/R&D3.jpg);}
+
+
+#content .contentArea .eventSlidemenu ul{margin-left: 100px; position: relative;}
+#content .contentArea .eventSlidemenu li .buttonMenu{width: 100%; height: 500px; display: block; cursor: pointer; position: relative; left: 0; top: 0; background: rgba(153, 153, 153, .5); transition: all .5s;}
+#content .contentArea .eventSlidemenu li dl{margin: 0 0 56px 10px; padding-top: 64px; position: relative;}
+#content .contentArea .eventSlidemenu li dl::before{content: ''; display: none; position: absolute; top: 200px; left: 0; }
+#content .contentArea .eventSlidemenu li dl dt{font-weight: 700; font-size: 1.125em; color: #fff; margin-bottom: 24px;}
+#content .contentArea .eventSlidemenu li dl dd{display: none; width: 326px;}
+#content .contentArea .eventSlidemenu li .eventList{display: none;}
+#content .contentArea .eventSlidemenu li .eventList li{position: relative;}
+#content .contentArea .eventSlidemenu li .eventList li::before{content: ''; display: block; width: 4px; border-radius: 100%; position: absolute; left: -16px; top: 12px; background: #999;}
+
+#content .contentArea .eventSlidemenu .pointer .buttonMenu{background: rgba(255, 255, 255, 0.8);}
+#content .contentArea .eventSlidemenu .pointer dl::before{display: block;}
+#content .contentArea .eventSlidemenu .pointer dl dd{display: block; font-size: 1.125em;}
+#content .contentArea .eventSlidemenu .pointer dl{display: block;}
+#content .contentArea .eventSlidemenu .pointer dl dt{color: #4d1f7a;}
+#content .contentArea .eventSlidemenu .pointer .eventList dl dd{display: block; font-size: 14px; margin: -60px 0 10px -30px;}
+#content .contentArea .eventSlidemenu .pointer .eventList dl dt{ margin: -100px 0 100px -30px;}
+#content .contentArea .eventSlidemenu .pointer .eventList{width: 300px; line-height: 1.5em; color: #666; margin-left: 10px; display: block;}
+
+
+
+#content .contentArea2 .tabBox{ text-align: center; position: relative; margin-top: 100px;}
+#content .contentArea2 .tabBox::before{content: ''; display: block; width: 2000px; height: 1px; background: #ccc; position: absolute; bottom: 90px; left: 50%; margin-left: -1000px;}
+#content .contentArea2 .tabBox .tabMenu{overflow: hidden;}
+#content .contentArea2 .tabBox .tabMenu li{float: left; width: 120px; margin: 0 240px 80px 0;}
+#content .contentArea2 .tabBox .tabMenu li:last-of-type{margin-right: 0;}
+#content .contentArea2 .tabBox .tabMenu li .tab{display: block; font-weight: 400; font-size: 1.25em; line-height: 25px; color: #666; position: relative;}
+#content .contentArea2 .tabBox .tabMenu li:hover .tab::before{transform: scale(1.6); background-color: #4d1f7a;}
+#content .contentArea2 .tabBox .tabMenu li a{transition: all .4s ease-out; display: block; margin-bottom: 30px;}
+#content .contentArea2 .tabBox .tabMenu li .bedock::before{content: ''; display: block; width: 12px; height: 12px; border-radius: 100%; background: #cecece; position: absolute; left: 50%; bottom: -25px; margin-left: -6px; transition: all 0.5s;}
+#content .contentArea2 .tabBox .tabMenu .current::after{content: ''; display: block; width: 18px; height: 18px; border-radius: 100%;  position: absolute; left: 50%; bottom: 10px; margin-left: -10.21px; }
+#content .contentArea2 .tabBox .tabMenu .current::before{content: ''; display: block; width: 12px; height: 12px; border-radius: 100%; background: #4d1f7a; position: absolute; left: 50%; bottom: -25px; transition: all 0.5s; margin-left: -6px;}
+
+#content .contentArea2 .historyBox dl{overflow: hidden;  padding: 40px}
+#content .contentArea2 .historyBox dl:last-of-type{border-bottom:none; margin-bottom: 80px;}
+#content .contentArea2 .historyBox dl dt{font-weight: bold; font-size: 30px; color: #4d1f7a; float: left; width: 190px; margin-left: 0;}
+#content .contentArea2 .historyBox dl dd{float: right; color: #333; width: 908px; margin-bottom: 20px; margin-top: 20px;}
+#content .contentArea2 .historyBox dl dd span{font-weight: 500; font-size: 1em; color: #999; margin-right: 24px;}

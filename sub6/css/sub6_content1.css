@@ -1,0 +1,26 @@
+#content .contentArea .slogun{text-align: center; font-size: 1.5em; line-height: 2em; margin: 50px 0 50px 0;}
+#content .contentArea .slogun p:nth-child(1){font-size: 33px; font-weight: bold; margin-top: 20px; color: #4d1f7a;}
+#content .contentArea .slogun p:nth-child(2){margin-top: 15px;}
+#content h3{font-size: 33px; margin: 100px 0 100px 0;  color: #4d1f7a; text-align: center;}
+#content .contentArea .slogun h3{font-size: 33px; font-weight: bold; margin-top: 20px; color: #4d1f7a;}
+
+#content .contentArea{margin-bottom: 120px;}
+#content .contentArea .content_topic{margin-top: 40px; text-align: center; margin-bottom: 80px;}
+#content .contentArea .process{width: 1200px; height: 359px; overflow: hidden;}
+#content .contentArea .process li{float: left; width: 120px; height: 120px; text-align: center;  font-weight: 700; font-size: 1.5em; margin: 50px 150px 0 0; border: 10px solid #4d1f7a; border-radius: 100%;}
+#content .contentArea .process li:first-of-type{margin-left: 82px; color: #4d1f7a;}
+#content .contentArea .process li:nth-of-type(2){color: #4d1f7a;}
+#content .contentArea .process li:nth-of-type(3){color: #4d1f7a;}
+#content .contentArea .process li:last-of-type{margin-right: 0; color: #4d1f7a;}
+#content .contentArea .process li span{display: block; font-weight: 500; font-size: 0.833em; color: #333;  margin-top: 4px;}
+#content .contentArea>h4{font-weight: 700; font-size: 1.5em; margin-bottom: 32px; color: #4d1f7a; margin-bottom: 10px; margin-top: 20px;}
+#content .contentArea li h4{margin-top: 20px;}
+#content .contentArea .point{overflow: hidden;}
+#content .contentArea  dl{float: left; width: 319px; height: 152px; margin-right: 21px; border: 1px solid #ececec; border-radius: 16px; padding: 40px 32px;}
+#content .contentArea  dl:last-of-type{margin-right: 0;}
+#content .contentArea  dl dt{font-size: 1.25em; font-weight: 500; margin-bottom: 16px; color: #333;}
+#content .contentArea  dl dt span{display: block; color: #4d1f7a; font-size: 0.9em;}
+#content .contentArea  dl dd{font-size: 1.125em; line-height: 1.5em; color: #666; margin-left: 16px; position: relative;}
+#content .contentArea  dl dd::before{content: ''; display: block; width: 4px; height: 4px; border-radius: 100%; position: absolute; left: -16px; top: 12px; background: #999;}
+
+#content #calendar{margin: 30px 0 50px 0;}
