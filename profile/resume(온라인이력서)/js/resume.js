@@ -22,24 +22,6 @@ $(document).ready(function(){
 
 
 
-
-
-    // notion
-    $(document).on("click", ".sign img", function(){
-        $(document).find(".notion-hidden").toggleClass("active");
-    })
-    $(document).on("click", ".notion-hidden", function(e){
-        e.preventDefault();
-        // https://mioksong.notion.site/my-work-8c40695ad651439284425e9ee89d67a1
-        const pw = prompt("password", "password");
-        if( pw == "551648" ){
-            window.open("https://mioksong.notion.site/my-work-8c40695ad651439284425e9ee89d67a1");
-        } else {
-            alert("비밀번호가 틀립니다.")
-        }
-    })
-
-
     
 
 

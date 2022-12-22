@@ -38,10 +38,18 @@ h1 img { width:70px; height:auto;}
   .pageintro .Logo{position:fixed; left: 50%; top: 50%; width: 100%; transform: translate(-50%, -50%); text-align:center;}
   .pageintro .Logo img{width:70%; max-width: 400px; opacity: 0;
     animation:intro_logo 1 3s; animation-delay: .3s; animation-fill-mode: forwards;}
-  .pageintro .Logo::after{content:'Welcome to my profil'; display: block; color:#333; font-size: 1rem; letter-spacing:0.5rem; margin:3rem 0 0; opacity: 0;
+  .pageintro .Logo::after{content:'Welcome to my profile'; display: block; color:#333; font-size: 1rem; letter-spacing:0.5rem; margin:3rem 0 0; opacity: 0;
     animation:intro_text 1 3s; animation-delay: .3s; animation-fill-mode: forwards;}
   
-  
+    section .scroll_down{position:absolute; right: 50%; bottom:40px; font-size:12px; font-style:italic; color:#333;  z-index: 3;}
+    section .scroll_down i{display:block; padding:5px 35px 0; animation:scroll_down infinite .7s linear;}
+    
+    @keyframes scroll_down {
+        0%{transform:translateY(0); opacity: 1;}
+        100%{transform:translateY(10px); opacity: 0;}
+    }
+    
+    .slogun .ps{text-align: center;}
 
 /*메인 메뉴*/
 .menu_wrap{width: 100%; position: fixed; z-index: 100; background: rgba(255, 255, 255, .0); overflow: hidden; display: flex; justify-content: space-evenly; align-items: center; padding: 32px 0 20px;}
@@ -59,6 +67,13 @@ h1 img { width:70px; height:auto;}
 #sub_menu li.on2 a, #sub_menu li:hover a{background: #7e1488; transform: scale(1.1);}
 .on{transition: all ease-out .4s; background: linear-gradient(to bottom, transparent 90%, #7e1488 90%) -20px -3px; margin: 0;}
 
+        /* respon gnb */
+        #wrap nav .gnb_open{position:fixed; right: 25px; top: 25px; display:block; width: 30px; height: 30px; font-size: 0; display: none; text-indent:-9999%; z-index:2;}
+        #wrap nav .gnb_open span{position:relative; display:block; width: 30px; height: 2px; margin:14px auto 0; background:#fff;}
+        #wrap nav .gnb_open span::before,
+        #wrap nav .gnb_open span::after{content:''; display: block; width: 30px; height: 2px; position:absolute; left:0; background:#fff; transition:all .3s; z-index:2;}
+        #wrap nav .gnb_open span::before{top:9px;}
+        #wrap nav .gnb_open span::after{top:-9px;}
 /*공통 레이아웃*/
 section{width:100%; height:700px; position:relative; background-size:cover; background-position:right center; overflow:hidden; z-index: 0; /* background-attachment:fixed; */}
 section dt{font-weight: 700; font-size: 14px; margin-bottom: 6px;}
@@ -206,3 +221,50 @@ section .prj_qr img{width: 110px;}
 .material-icons{font-size: 16px; position: relative; top: 4px;}
 
 
+
+/* scrollTop */
+.scrollTop{position:fixed; right: 1rem; bottom:1rem; width:5rem; height: 5rem; border-radius:.45rem; background:rgba(0,0,0,0.5); overflow: hidden; transition:background .3s; display:none;}
+.scrollTop i{position:absolute; left:0; display:block; width:5rem; height: 5rem; text-align:center; color:#fff; font-size:2rem; line-height:5rem; transition:top .3s;}
+.scrollTop i:nth-child(1){top:0; color:rgba(255,255,255,.5)}
+.scrollTop i:nth-child(2){top:5rem;}
+@media (hover:hover){
+    .scrollTop:hover{background:rgba(0,0,0,1);}
+    .scrollTop:hover i:nth-child(1){top:-5rem;}
+    .scrollTop:hover i:nth-child(2){top:0;}
+}
+@media only screen and (max-width:1024px) {
+    html{overflow-y:scroll;}
+
+     nav{position:fixed; right: 0; top: 0; width: 100%; left: inherit; transform: translate(0,0);}
+     nav .gnb_open{display: block;}
+     nav ul{position:fixed; right:-70%; top:0; width:70%; height: 100vh; padding:90px 10% 0; box-sizing:border-box; background:rgba(0,0,0,.9); transition:all .3s;}
+        /* on */
+     nav.on ul{right:0;}
+     nav.on .gnb_open span{background:rgba(255,255,255,0);}
+     nav.on .gnb_open span::before{top:0; transform:rotate(45deg);}
+     nav.on .gnb_open span::after{top:0; transform:rotate(-45deg);}
+
+
+    #wrap article section{padding:90px 25px;}
+    #wrap article section.main{padding:0;}
+
+    section.main .scroll_down{right:25px; bottom:25px}
+
+    section.profile .photo{float:none; width:auto; height: 500px;}
+    section.profile .intro{position:relative; top:inherit; margin: 3rem 25px; transform:translateY(0);}
+    section.profile .intro .name{font-size:3rem;}
+
+    #wrap article section{width: auto;}
+
+    section .monitor{float:none; width:auto; margin:0 6rem;}
+    section .monitor .video{position:relative; left:inherit; top:inherit; transform:translate(0,0);}
+
+    section .phone{float:none; width: auto; margin:0 16rem;}
+    section .phone .video{position:relative; left:50%; top:inherit; transform:translate(-50%,0);}
+
+    section .design{float:none; width: auto; margin:0 6rem;}
+    section .design .image{position:relative; left:inherit; top:inherit; transform:translate(0,0);}
+
+    section .prj_info{margin:2rem; transform:translate(0,0);}
+    section .prj_info .ttl{font-size:3rem;}
+}

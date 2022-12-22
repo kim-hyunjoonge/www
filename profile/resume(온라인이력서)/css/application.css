@@ -285,6 +285,3 @@ img{border: 0; vertical-align: top}
 .footer p + p{font-weight:700; font-size:1.25rem; margin:2rem 0 0;}
 .footer p img{position:relative; top: -1rem; margin-left:1rem;}
 .footer .sign img{width: 40px; position: absolute; right: 3px; top: 50px;}
-
-.notion-hidden{position:fixed; left:1rem; bottom:1rem; background:rgba(0,0,0,.5); color: #fff; padding: 0.5rem 1rem; border-radius: 0.5rem; display: none;}
-.notion-hidden.active{display: block;}

@@ -11,44 +11,43 @@
 	<script type="text/javascript" src="./js/prefixfree.min.js"></script>
 	<script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
 	<script type="text/javascript" src="./js/custom.js"></script>
+	<script type="text/javascript" src="./js/typer.js"></script>
 	
     <script src="https://kit.fontawesome.com/0e5abf2d10.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
 <!-- 로고 -->
 <h1><img src="./img/logo.png" /></h1>
 <div class="pageintro">
     <div class="Logo"><img src="./img/logo.png" alt="THEHAM logo"></div>
 </div>
-
 <!-- 메인 메뉴 -->
-<div class="menu_wrap">
+<nav id="gnb" class="menu_wrap">
 	<ul id="menu">
 		<li class="on"><a href="#">홈</a></li>
-		<li><a href="#">프로필</a></li>
-		<li><a href="#">PC웹</a></li>
-		<li><a href="#">모바일웹</a></li>
-		<li><a href="#">반응형웹</a></li>
-		<li><a href="#">부트스트랩</a></li>
-		<li><a href="#">워드프레스</a></li>
-		<li><a href="#">VUE.JS</a></li>
+		<li><h3><a href="#">프로필</a></h3></li>
+		<li><h3><a href="#">PC웹</a></h3></li>
+		<li><h3><a href="#">모바일웹</a></h3></li>
+		<li><h3><a href="#">반응형웹</a></h3></li>
+		<li><h3><a href="#">부트스트랩</a></h3></li>
+		<li><h3><a href="#">워드프레스</a></h3></li>
+		<li><h3><a href="#">VUE.JS</a></h3></li>
 	</ul>
 	<div>yui3268@naver.com</div>
-</div>
-
-
+</nav>
 <!-- 전체 페이지 -->
 <div id="wrap">
 
+
 	<!-- 첫 번째 박스 -->
-	<section>
+	<section class="main active">
 		<h3 class="hidden">HOME</h3>
-		<div>
+		<div class="slogun">
 		<p><strong class="en">소통</strong>과 <strong class="en">노력</strong>으로 <br> 항상 발전하는 <br> 개발자 <strong class="ko">김현중</strong>입니다.</p>
-		</div>
+	</div>
 			<span class="sub_info">KIMHYUNJOONG<br>portfolio_v2022</span>
 			<span class="sub_info sub_info2">Web Publisher<br>Front End Development</span>
+			<a href="#" class="scroll_down">SCROLL DOWN<i class="fa-solid fa-angles-down"></i></a>	
 		</section>
 	
 	<!-- 두 번째 박스 -->
@@ -332,6 +331,10 @@
 	</section>
 </div>
 <div class="footer">
+	<a href="#" class="scrollTop">
+        <i class="fa-solid fa-arrow-up-long"></i>
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </a>
 	<p><span class="material-icons"><i class="fa-sharp fa-solid fa-phone"></i></span> 010-3687-5176 <span class="material-icons"><i class="fa-sharp fa-solid fa-envelope"></i></span> yui3268@naver.com </p>
 </div>
 </body>
